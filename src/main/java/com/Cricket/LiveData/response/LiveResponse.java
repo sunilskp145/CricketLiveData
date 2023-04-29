@@ -13,4 +13,19 @@ public class LiveResponse {
     private List<CricketResults> cricketResults;
 
 
+    public CricketInfo getCricketInfo() {
+        return cricketInfo;
+    }
+
+    public void setCricketInfo(CricketInfo cricketInfo) {
+        this.cricketInfo = cricketInfo;
+    }
+
+    public List<CricketResults> getCricketResults() {
+        return cricketResults;
+    }
+
+    public void setCricketResults(List<CricketResults> cricketResults) {
+        this.cricketResults = cricketResults;
+    }
 }

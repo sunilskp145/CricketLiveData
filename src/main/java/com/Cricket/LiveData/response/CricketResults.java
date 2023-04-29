@@ -18,4 +18,12 @@ public class CricketResults {
     public void setType(String type) {
         this.type = type;
     }
+
+    public List<CricketSeries> getCricketSeries() {
+        return cricketSeries;
+    }
+
+    public void setCricketSeries(List<CricketSeries> cricketSeries) {
+        this.cricketSeries = cricketSeries;
+    }
 }

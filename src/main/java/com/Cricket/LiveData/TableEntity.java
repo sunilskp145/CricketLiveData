@@ -1,16 +1,20 @@
-package com.Cricket.LiveData.response;
+package com.Cricket.LiveData;
 
-import org.springframework.stereotype.Component;
+import javax.persistence.Entity;
 
-@Component
-public class CricketSeries {
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "CricketInfo")
+public class TableEntity {
+    @Id
     private String series_id;
     private String series_name;
     private String status;
     private  String season;
     private  String updated_at;
-
 
     public String getSeries_id() {
         return series_id;
@@ -50,16 +54,5 @@ public class CricketSeries {
 
     public void setUpdated_at(String updated_at) {
         this.updated_at = updated_at;
-    }
-
-    @Override
-    public String toString() {
-        return "CricketSeries{" +
-                "series_id='" + series_id + '\'' +
-                ", series_name='" + series_name + '\'' +
-                ", status='" + status + '\'' +
-                ", season='" + season + '\'' +
-                ", updated_at='" + updated_at + '\'' +
-                '}';
     }
 }
